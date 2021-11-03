@@ -1,23 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="css/materias/styles-materias.css">
+
   <title>Materias</title>
 </head>
+
 <body>
   <!-- Barra de navegación -->
- 
+  <div class="barrra-navegacion">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background: var(--yellow);">
+          <div class="container"><a class="navbar-brand" href="index.html">Home</a><button data-toggle="collapse"
+              class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
+                class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+              <ul class="navbar-nav d-flex flex-grow-1 justify-content-end ml-auto">
+                <li class="nav-item"><a class="nav-link active" href="eventos.html">Eventos</a></li>
+                <li class="nav-item"><a class="nav-link" href="materias.html">Materias</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                      height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                      <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                      <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                    </svg> &nbsp;Alumno</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
 
 
   <!--Contenedor general-->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <img src="imagenes/materias/profesor.jpeg" alt="">
+  <div class="fondo">
+    <div class="container contenedor">
+      <!-- Titulo de la seccion -->
+      <div class="row-full titulo">
+        <div class="col-md-12">
+          <h1>Materias</h1>
+        </div>
       </div>
-  </div>
+
+      <!-- Selectores de materia -->
+      <div class="row-full contenedor-materias">
+        <!-- Imagen del profesor -->
+        <div class="col-6 col-md-4 col-lg-3 seccion">
+          <img src="imagenes/materias/profesor.png" alt="profesor"/>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 seccion">
+          <div class="materia">
+            <img src="imagenes/materias/matematicas.webp" id="matematicas" alt="matematicas">
+          </div>
+          <a href="temas.html" class="nombre-materia">
+            <h2>Matemáticas</h2>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 seccion">
+          <div class="materia">
+            <img src="imagenes/materias/español.png" id="espanol" alt="matematicas">
+          </div>
+          <a href="#" class="nombre-materia">
+            <h2>Español</h2>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 seccion">
+          <div class="materia">
+            <img src="imagenes/materias/quimica.png" id="quimica" alt="matematicas">
+          </div>
+          <a href="#" class="nombre-materia">
+            <h2>Química</h2>
+          </a>
+        </div>
+      </div>
+
+      <!-- Informacion que cura del día -->
+      <div class="row full informacion-caja">
+        <div class="col-12">
+          <h3 id="titulo-informacion">Información que cura del día</h3>
+          <p>Sabías que un día como hoy pero de 1853, WilliamWalker y su grupo de fusileros problaman la independencia de Baja California... <a href="https://es.wikipedia.org/wiki/Rep%C3%BAblica_de_Baja_California#:~:text=William%20Walker%2C%20quien%20pretend%C3%ADa%20fundar,conocida%20como%20la%20Baja%20California.&text=All%C3%AD%20proclam%C3%B3%2C%20el%203%20de,era%20libre%2C%20soberana%20e%20independiente." target="_blank" rel="noopener noreferrer">Leer más.</a></p>
+        </div>
+      </div>
+    </div>
 
 </body>
+
 </html>
